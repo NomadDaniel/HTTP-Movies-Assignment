@@ -3,41 +3,79 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #f2f2f2;
+  width: 100%;
+  margin: auto;
+  background-image: url('../src/images/moive-collage.png');
+}
+.movie-list {
+  width: 75%;
+  margin: auto;
 }
 
 .movie-card {
+  width: 100%;
   background-color: #fff;
-  border: 0;
+  border: 2px solid grey;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem auto;
+  margin: 2rem auto;
+  opacity: 85%;
 }
 
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
 }
+.Update-Movie {
+  text-align: center;
+  margin: 2%;
+}
+
+.form {
+  background-color: lightskyblue;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: left;
+  margin: auto;
+  border: 2px solid;
+  opacity: 85%;
+}
+input[type=submit] {
+  color: blueviolet;
+  background-color: lightgreen;
+  font-weight: bold;
+  width: 35%;
+
+}
+input[type=submit]:hover {
+  background-color: green;
+  color:white;
+  border: 3px solid hotpink;
+  font-weight: bold;
+}
 
 .saved-list {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-  width: 75%;
+  background-color: lightsteelblue;
+  border: 2px solid;
+  box-shadow: blue(0, 0, 0, 0.24);
+  /* padding: .5rem; */
+  /* cursor: pointer; */
+  /* position: relative; */
+  margin: auto;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .saved-list h3 {
-  margin-right: 10px;
+  font-size: 2rem;
+  font-family: fantasy;
 }
 
 .saved-movie {
@@ -46,7 +84,7 @@ body {
 .saved-active {
   color: blue;
   border: 1px solid grey;
-  padding: 5px;
+  padding: 2px;
 }
 .save-wrapper {
   position: relative;
@@ -59,16 +97,55 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightgreen;
+  color: white;
 }
 .save-button:hover {
   background-color: green;
+  color:white;
+  border: 3px solid grey;
+}
+
+.delete-button {
+  position: absolute;
+  top: 75px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightpink;
   color: white;
+}
+.delete-button:hover {
+  background-color: red;
+  color: white;
+  border: 3px solid grey;
+}
+.update-button {
+  position: absolute;
+  top: 125px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightblue;
+  color: white;
+}
+.update-button:hover {
+  background-color: blue;
+  color: white;
+  border: 3px solid grey;
 }
 
 .home-button {
   padding: 5px 10px;
+  background-color: lightblue;
+  color: purple;
+  border: 1px solid grey;
+
+}
+.home-button:hover {
+  padding: 5px 10px;
   background-color: lightskyblue;
+  border: 3px solid grey;
 }
 
 .movie-warning {
