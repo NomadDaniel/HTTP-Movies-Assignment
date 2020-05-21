@@ -1,4 +1,4 @@
-// the form is use to update the chosen movie
+// this form is used to update the movie
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
